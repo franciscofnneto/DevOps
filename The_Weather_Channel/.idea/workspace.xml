@@ -1,0 +1,656 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a43d1caf-f7de-4ec4-88f6-e5f9305e1ba4" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/The_Weather_Channel$Scenario__Consultar_a_previsão_do_tempo_pra_daqui_a_5_dias_em_Recife__1_.ic" NAME="Scenario: Consultar a previsão do tempo pra daqui a 5 dias em Recife (1) Coverage Results" MODIFIED="1548950792174" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>cucumber.api.cli.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/The_Weather_Channel$Scenario__Consultar_a_previsão_do_tempo_pra_daqui_a_5_dias_em_Recife.ic" NAME="Scenario: Consultar a previsão do tempo pra daqui a 5 dias em Recife Coverage Results" MODIFIED="1548950051885" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>cucumber.api.cli.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/The_Weather_Channel$Feature__The_Weather_Channel.ic" NAME="Feature: The_Weather_Channel Coverage Results" MODIFIED="1548950462471" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>cucumber.api.cli.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/The_Weather_Channel$Feature__Calc.ic" NAME="Feature: Calc Coverage Results" MODIFIED="1548949799453" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>cucumber.api.cli.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/The_Weather_Channel$Scenario__Somar.ic" NAME="Scenario: Somar Coverage Results" MODIFIED="1548949603539" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>cucumber.api.cli.*</FILTER>
+    </SUITE>
+  </component>
+  <component name="CoverageOptionsProvider">
+    <option name="myAddOrReplace" value="1" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="73" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/stepDefinitions/RunTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/features/The_Weather_Channel.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="158">
+              <caret line="14" column="74" lean-forward="true" selection-start-line="14" selection-start-column="74" selection-end-line="14" selection-end-column="74" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/stepDefinitions/ChannelSteps.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="157">
+              <caret line="116" column="61" lean-forward="true" selection-start-line="116" selection-start-column="61" selection-end-line="116" selection-end-column="61" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/stepDefinitions/Locators.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="12" column="92" selection-start-line="12" selection-start-column="92" selection-end-line="12" selection-end-column="92" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/com/example/Example.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/com/example/ExampleSteps.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/example/CukesRunner.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/example/CalcRunner.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bdd/calculadora/Calc.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/example/CalcSteps.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/bdd/calculadora/CalcSteps.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/TestChannel/My_test_Channel.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/TestChannel/Run_Test_Channel.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/TestChannel/Stepdefs.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/hello.feature" />
+        <option value="$PROJECT_DIR$/src/main/java/Hello.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/TestChannel/Hello.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/TestChannel/ChannelTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/TestChannel/helloSteps.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/TestChannel/ChannelSteps.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/The_Weather_Channel.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/com/TestChannel/RunCukesTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/stepDefinitions/RunCukesTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/TestChannel/HomePage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/stepDefinitions/Locators.java" />
+        <option value="$PROJECT_DIR$/src/main/java/stepDefinitions/Cenario2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/stepDefinitions/Cenario1.java" />
+        <option value="$PROJECT_DIR$/src/main/java/stepDefinitions/Pesquisar_Cidade.java" />
+        <option value="$PROJECT_DIR$/src/test/java/stepDefinitions/ChannelStep02.java" />
+        <option value="$PROJECT_DIR$/src/test/java/stepDefinitions/ChannelStep03.java" />
+        <option value="$PROJECT_DIR$/src/test/java/stepDefinitions/Locators.java" />
+        <option value="$PROJECT_DIR$/src/test/java/stepDefinitions/Waits.java" />
+        <option value="$PROJECT_DIR$/src/test/java/stepDefinitions/RunCukesTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/stepDefinitions/ChannelStep01.java" />
+        <option value="$PROJECT_DIR$/src/test/java/stepDefinitions/RunTest.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/The_Weather_Channel.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/stepDefinitions/ChannelSteps.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="257" />
+    <option name="y" value="117" />
+    <option name="width" value="937" />
+    <option name="height" value="535" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="The_Weather_Channel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The_Weather_Channel" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="The_Weather_Channel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The_Weather_Channel" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="The_Weather_Channel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The_Weather_Channel" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="The_Weather_Channel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The_Weather_Channel" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="The_Weather_Channel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The_Weather_Channel" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="The_Weather_Channel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The_Weather_Channel" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="stepDefinitions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="The_Weather_Channel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The_Weather_Channel" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="The_Weather_Channel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The_Weather_Channel" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="features" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550062892210" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.TestChannel" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Francisco\The_Weather_Channel\src\test\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Francisco\The_Weather_Channel\src\test\resources\features" />
+      <recent name="C:\Users\Francisco\The_Weather_Channel\src\test\resources" />
+      <recent name="C:\Users\Francisco\The_Weather_Channel\src\main\java\com\TestChannel" />
+      <recent name="C:\Users\Francisco\The_Weather_Channel\src\test\java" />
+      <recent name="C:\Users\Francisco\The_Weather_Channel\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Cucumber java.Feature: The_Weather_Channel (1)">
+    <configuration name="Feature: The_Weather_Channel (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="3" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/The_Weather_Channel.feature" />
+      <option name="GLUE" value="com.TestChannel stepDefinitions" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="The_Weather_Channel" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm3SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: The_Weather_Channel" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Feature: The_Weather_Channel" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="3" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/The_Weather_Channel.feature" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="The_Weather_Channel" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm3SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: The_Weather_Channel" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Consultar a previsão do tempo pra daqui a 5 dias em Recife" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="3" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/The_Weather_Channel.feature" />
+      <option name="GLUE" value="com.TestChannel stepDefinitions" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="The_Weather_Channel" />
+      <option name="NAME_FILTER" value="^Consultar a previsão do tempo pra daqui a 5 dias em Recife$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm3SMFormatter --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm3SMFormatter --name &quot;^Consultar a previsão do tempo pra daqui a 5 dias em Recife$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Consultar a previsão do tempo pra daqui a 5 dias em Recife" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RunCukesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="The_Weather_Channel" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.TestChannel.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.TestChannel" />
+      <option name="MAIN_CLASS_NAME" value="com.TestChannel.RunCukesTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RunCukesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="The_Weather_Channel" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="stepDefinitions.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="stepDefinitions" />
+      <option name="MAIN_CLASS_NAME" value="stepDefinitions.RunCukesTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RunTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="The_Weather_Channel" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="stepDefinitions.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="stepDefinitions" />
+      <option name="MAIN_CLASS_NAME" value="stepDefinitions.RunTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Cucumber java.Feature: The_Weather_Channel" />
+      <item itemvalue="Cucumber java.Feature: The_Weather_Channel (1)" />
+      <item itemvalue="Cucumber java.Scenario: Consultar a previsão do tempo pra daqui a 5 dias em Recife" />
+      <item itemvalue="JUnit.RunCukesTest" />
+      <item itemvalue="JUnit.RunTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Cucumber java.Feature: The_Weather_Channel (1)" />
+        <item itemvalue="JUnit.RunTest" />
+        <item itemvalue="Cucumber java.Scenario: Consultar a previsão do tempo pra daqui a 5 dias em Recife" />
+        <item itemvalue="JUnit.RunCukesTest" />
+        <item itemvalue="Cucumber java.Feature: The_Weather_Channel" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a43d1caf-f7de-4ec4-88f6-e5f9305e1ba4" name="Default Changelist" comment="" />
+      <created>1548777854502</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1548777854502</updated>
+      <workItem from="1549626130715" duration="3502000" />
+      <workItem from="1549629903516" duration="1208000" />
+      <workItem from="1549631138788" duration="4612000" />
+      <workItem from="1549636048725" duration="426000" />
+      <workItem from="1549636521740" duration="81000" />
+      <workItem from="1549636802850" duration="1963000" />
+      <workItem from="1549646189184" duration="5175000" />
+      <workItem from="1549651442312" duration="2486000" />
+      <workItem from="1549654236486" duration="1489000" />
+      <workItem from="1549655978071" duration="707000" />
+      <workItem from="1549656949090" duration="2206000" />
+      <workItem from="1549886363349" duration="9072000" />
+      <workItem from="1549997150120" duration="38000" />
+      <workItem from="1549997257099" duration="1676000" />
+      <workItem from="1550001089940" duration="1861000" />
+      <workItem from="1550003324725" duration="1429000" />
+      <workItem from="1550057384210" duration="1113000" />
+      <workItem from="1550058772839" duration="2441000" />
+      <workItem from="1550061878006" duration="1548000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="RunCukesTest - 2019.02.13 at 08h 32m 49s.xml">
+      <configuration name="RunCukesTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Feature__The_Weather_Channel_(1) - 2019.02.13 at 08h 36m 52s.xml">
+      <configuration name="Feature: The_Weather_Channel (1)" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Feature__The_Weather_Channel_(1) - 2019.02.13 at 08h 48m 22s.xml">
+      <configuration name="Feature: The_Weather_Channel (1)" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Feature__The_Weather_Channel_(1) - 2019.02.13 at 09h 06m 10s.xml">
+      <configuration name="Feature: The_Weather_Channel (1)" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Feature__The_Weather_Channel_(1) - 2019.02.13 at 09h 10m 03s.xml">
+      <configuration name="Feature: The_Weather_Channel (1)" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Feature__The_Weather_Channel_(1) - 2019.02.13 at 09h 15m 38s.xml">
+      <configuration name="Feature: The_Weather_Channel (1)" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Feature__The_Weather_Channel_(1) - 2019.02.13 at 09h 16m 48s.xml">
+      <configuration name="Feature: The_Weather_Channel (1)" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Feature__The_Weather_Channel_(1) - 2019.02.13 at 09h 22m 46s.xml">
+      <configuration name="Feature: The_Weather_Channel (1)" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Feature__The_Weather_Channel_(1) - 2019.02.13 at 09h 57m 48s.xml">
+      <configuration name="Feature: The_Weather_Channel (1)" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Feature__The_Weather_Channel_(1) - 2019.02.13 at 10h 03m 01s.xml">
+      <configuration name="Feature: The_Weather_Channel (1)" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="43033000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29820052" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Database Changes" order="2" />
+      <window_info anchor="bottom" id="Find" order="3" weight="0.3293011" />
+      <window_info active="true" anchor="bottom" id="Run" order="4" visible="true" weight="0.36827958" />
+      <window_info anchor="bottom" id="Debug" order="5" weight="0.39919356" />
+      <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="8" weight="0.3295082" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3295082" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32258064" />
+      <window_info anchor="right" id="Database" order="0" />
+      <window_info anchor="right" id="Maven" order="1" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="2" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="3" weight="0.24962178" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Maven Projects" order="9" />
+      <window_info anchor="right" id="Coverage" order="10" side_tool="true" weight="0.23146747" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/test/resource/The_Weather_Channel.feature" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/Example.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/ExampleSteps.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/resources/Example.feature" />
+    <entry file="jar://$MAVEN_REPOSITORY$/io/cucumber/cucumber-core/4.2.0/cucumber-core-4.2.0.jar!/cucumber/api/CucumberOptions.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/Class.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="2670" selection-start-line="2670" selection-end-line="2670" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/bdd/calculadora/CalcSteps.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bdd/calculadora/Calc.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/bdd/calculadora/CalcRunner.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/resources/Calc.feature" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/TestChannel/Run_Test_Channel.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/TestChannel/Stepdefs.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/TestChannel/My_test_Channel.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/TestChannel/Hello.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/stepDefinitions/helloSteps.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/hello.feature" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/TestChannel/HomePage.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/io/cucumber/cucumber-core/4.2.0/cucumber-core-4.2.0.jar!/cucumber/runner/PickleStepDefinitionMatch.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="77" selection-start-line="77" selection-end-line="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="63" column="19" selection-start-line="63" selection-start-column="19" selection-end-line="63" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/stepDefinitions/Locators.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/stepDefinitions/Cenario2.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/stepDefinitions/Cenario1.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/stepDefinitions/Pesquisar_Cidade.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/stepDefinitions/ChannelStep02.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/stepDefinitions/ChannelStep03.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/stepDefinitions/Waits.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/stepDefinitions/RunTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/stepDefinitions/Locators.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="12" column="92" selection-start-line="12" selection-start-column="92" selection-end-line="12" selection-end-column="92" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/The_Weather_Channel.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="14" column="74" lean-forward="true" selection-start-line="14" selection-start-column="74" selection-end-line="14" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/stepDefinitions/ChannelSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="116" column="61" lean-forward="true" selection-start-line="116" selection-start-column="61" selection-end-line="116" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>The_Weather_Channel</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: com.google.code.findbugs:jsr305:1.3.9</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
