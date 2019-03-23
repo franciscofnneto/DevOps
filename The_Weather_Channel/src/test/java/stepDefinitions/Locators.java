@@ -24,6 +24,6 @@ public class Locators {
     public static By Menu_Fim_de_Semana = By.cssSelector("#header-LocalsuiteNav-9e937d06-a4be-493a-bc54-942db4a05af8 > div > div > div > ul > li:nth-child(5) > a > span");
     public static By Link_Sabado = By.cssSelector("#twc-scrollable > section > div > div > div:nth-child(2) > section > header > h3");
 
-//testedevops11
+//testedevops12
 
 }
