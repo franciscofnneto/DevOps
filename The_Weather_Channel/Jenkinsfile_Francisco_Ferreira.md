@@ -1,5 +1,14 @@
 def username = 'Jenkins'
 env.CC = 'clang'
+def ambiente = input id: 'test', message: 'Please Provide Parameters', ok: 'Next',
+parameters: [
+choice(name: 'ENVIRONMENT',
+choices: ['dev','qa'].join('\n'),
+description: 'Please select the Environment'),
+string(name: 'TAG',
+defaultValue: 'tag01',
+description: 'Please enter the tag')
+]
 node {
 stage('Build') {
 env.DEBUG_FLAGS = '-g'
@@ -13,6 +22,7 @@ sh 'printenv'
 }
 stage('Test') {
 echo 'Testing..'
+echo “${ambiente}"
 }
 stage('Deploy') {
 echo 'Deploying....'
