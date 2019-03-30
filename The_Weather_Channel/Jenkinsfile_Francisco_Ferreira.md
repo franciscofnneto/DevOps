@@ -3,7 +3,7 @@ node {
 		echo 'Building..'
 		deleteDir()
 		checkout scm
-		sh 'cat Jenkinsfile.md'
+		sh 'cat Jenkinsfile_Francisco_Ferreira.md'
 	}
 	stage('Test') {
 		echo 'Testing..'
