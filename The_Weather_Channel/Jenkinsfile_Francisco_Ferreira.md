@@ -5,7 +5,7 @@ echo 'Building..'
 echo "Hello Mr. ${username}"
 deleteDir()
 checkout scm
-sh 'cat Jenkinsfile_Francisco_Ferreira.md'
+sh 'cat The_Weather_Channel/Jenkinsfile_Francisco_Ferreira.md'
 }
 stage('Test') {
 echo 'Testing..'
