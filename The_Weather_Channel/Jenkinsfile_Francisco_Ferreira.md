@@ -1,12 +1,15 @@
-def username = 'Francisco'
+def username = 'Jenkins'
+env.CC = 'clang'
 node {
 stage('Build') {
+env.DEBUG_FLAGS = '-g'
 echo 'Building..'
-echo "Olá Sr. ${username}"
+echo "Hello Mr. ${username}"
 echo "Running ${env.JOB_NAME} (${env.BUILD_ID}) at ${env.JENKINS_URL}"
 deleteDir()
 checkout scm
-sh 'cat The_Weather_Channel/Jenkinsfile_Francisco_Ferreira.md'
+sh 'cat README.md'
+sh 'printenv'
 }
 stage('Test') {
 echo 'Testing..'
