@@ -11,7 +11,7 @@ node {
 stage('Build') {
 env.DEBUG_FLAGS = '-g'
 echo 'Building..'
-echo '${ambiente}''
+echo '${ambiente}'
 deleteDir()
 checkout scm
 sh 'cat The_Weather_Channel/Jenkinsfile_Francisco_Ferreira.md'
