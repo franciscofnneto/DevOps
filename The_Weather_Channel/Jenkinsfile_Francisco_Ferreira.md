@@ -1,11 +1,11 @@
 def ambiente = input id: 'test', message: 'Please Provide Parameters', ok: 'Next',
 parameters: [
-choice(name: 'ENVIRONMENT',
-choices: ['dev','qa'].join('\n'),
-description: 'Please select the Environment'),
+choice(name: 'Selecione uma Opção',
+choices: ['Opção 001','Opção 002'].join('\n'),
+description: 'Escolha uma Opção'),
 string(name: 'TAG',
 defaultValue: 'tag01',
-description: 'Please enter the tag')
+description: 'Entre com a tag')
 ]
 node {
 stage('Build') {
