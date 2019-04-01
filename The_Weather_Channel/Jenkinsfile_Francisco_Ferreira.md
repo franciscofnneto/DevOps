@@ -19,6 +19,7 @@ sh 'printenv'
 }
 stage('Test') {
 echo 'Testing..'
+pom = readMavenPom file: 'The_Weather_Channel/pom.xml'
 }
 stage('Deploy') {
 echo 'Deploying....'
