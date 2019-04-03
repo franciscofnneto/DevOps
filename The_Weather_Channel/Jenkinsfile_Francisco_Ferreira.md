@@ -1,35 +1,26 @@
-pipeline{
-	agent any
-
-	stages{
-
-		stage('Compile Stage'){
-
-			steps{
-
-				withMaven(mavem: 'maven_3_6_0'){
-					sh 'mvn clean install'
-				}
-			}
-		}
-
-		stage('Teste Stage'){
-
-			steps{
-
-				withMaven(mavem: 'maven_3_6_0'){
-					sh 'mvn test'
-				}
-			}
-		}
-
-		stage ('Cucumber Reports'){
-
-			steps{
-				cucumber buildStatus: "UNSTABLE",
-					fileIncludePattern: "**/cucumber.json",
-					jsonReportDirectory: 'target'
-			}
-		}
-	}
+def ambiente = input id: 'test', message: 'Please Provide Parameters', ok: 'Avançar',
+parameters: [
+choice(name: 'Selecione uma Opção',
+choices: ['Opção 001','Opção 002'].join('\n'),
+description: 'Escolha uma Opção'),
+string(name: 'TAG',
+defaultValue: 'tag01',
+description: 'Entre com a tag')
+]
+node {
+stage('Build') {
+env.DEBUG_FLAGS = '-g'
+echo 'Building..'
+echo '${ambiente}'
+deleteDir()
+checkout scm
+sh 'cat The_Weather_Channel/Jenkinsfile_Francisco_Ferreira.md'
+sh 'printenv'
+}
+stage('Test') {
+echo 'Testing..'
+}
+stage('Deploy') {
+echo 'Deploying....'
+}
 }
