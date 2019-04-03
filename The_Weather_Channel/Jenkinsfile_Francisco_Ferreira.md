@@ -13,9 +13,7 @@ sh 'printenv'
 }
 stage('Test') {
 echo 'Testing..'
-steps{
 	sh 'mvn test'
-}
 post{
 	always{
 	junit 'target/surefire-reposts/*.xml'
