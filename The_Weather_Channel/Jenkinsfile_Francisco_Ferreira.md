@@ -13,7 +13,7 @@ sh 'printenv'
 }
 stage('Test') {
 echo 'Testing..'
-junit 'The_Weather_Channel/pom.xml'
+junit '**/The_Weather_Channel/pom.xml'
 }
 stage('Deploy') {
 echo 'Deploying....'
