@@ -10,11 +10,10 @@ deleteDir()
 checkout scm
 sh 'cat The_Weather_Channel/Jenkinsfile_Francisco_Ferreira.md'
 sh 'printenv'
-git url: 'https://github.com/franciscofnneto/DevOps.git'
 }
 stage('Test') {
 echo 'Testing..'
-def builInfo = rtMaven.run pom: 'pom.xml', goals: 'install'
+junit 'The_Weather_Channel/pom.xml'
 }
 stage('Deploy') {
 echo 'Deploying....'
