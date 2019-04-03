@@ -14,6 +14,7 @@ git url: 'https://github.com/franciscofnneto/DevOps.git'
 }
 stage('Test') {
 echo 'Testing..'
+def builInfo = rtMaven.run pom: 'pom.xml', goals: 'install'
 }
 stage('Deploy') {
 echo 'Deploying....'
