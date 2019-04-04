@@ -16,8 +16,7 @@ node {
 	
 	stage('Test') {
 		echo 'Testing..'
-		Running 'The_Weather_Channel/pom.xml'
-		junit 'The_Weather_Channel/pom.xml'
+		rtMaven.run pom: 'The_Weather_Channel/pom.xml'
 		}
 	
 	stage('Deploy') {
