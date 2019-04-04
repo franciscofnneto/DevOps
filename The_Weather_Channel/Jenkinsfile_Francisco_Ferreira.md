@@ -16,7 +16,7 @@ node {
 	
 	stage('Test') {
 		echo 'Testing..'
-		Running 'The_Weather_Channel/build.xml'
+		Running 'The_Weather_Channel/pom.xml'
 		junit 'The_Weather_Channel/pom.xml'
 		}
 	
