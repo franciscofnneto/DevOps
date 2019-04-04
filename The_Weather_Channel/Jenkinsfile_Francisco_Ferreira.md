@@ -15,6 +15,7 @@ node {
 	
 	stage('Test') {
 		echo 'Testing..'
+		sh 'cat The_Weather_Channel/pom.xml'
 		}
 	
 	stage('Deploy') {
