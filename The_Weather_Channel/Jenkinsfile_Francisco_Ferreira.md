@@ -15,6 +15,7 @@ node {
 	
 	stage('Test') {
 		echo 'Testing..'
+		sh 'The_Weather_Channel/pom.xml'
 		junit 'The_Weather_Channel/pom.xml'
 		}
 	
