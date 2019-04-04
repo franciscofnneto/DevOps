@@ -16,7 +16,7 @@ node {
 	
 	stage('Test') {
 		echo 'Testing..'
-		sh 'The_Weather_Channel/pom.xml'
+		sh 'https://github.com/franciscofnneto/DevOps/blob/master/The_Weather_Channel/build.xml'
 		junit 'The_Weather_Channel/pom.xml'
 		}
 	
