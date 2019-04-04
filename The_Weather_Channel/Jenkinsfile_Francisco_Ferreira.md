@@ -16,7 +16,8 @@ node {
 	
 	stage('Test') {
 		echo 'Testing..'
-		sh 'The_Weather_Channel/pom.xml'
+		sh 'ant -f The_Weather_Channel/pom.xml -v'
+		junit 'reports/result.xml'
 		}
 	
 	stage('Deploy') {
