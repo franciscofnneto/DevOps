@@ -16,7 +16,7 @@ node {
 	
 	stage('Test') {
 		echo 'Testing..'
-		rtMaven.run pom: 'The_Weather_Channel/pom.xml'
+		sh 'The_Weather_Channel/pom.xml'
 		}
 	
 	stage('Deploy') {
