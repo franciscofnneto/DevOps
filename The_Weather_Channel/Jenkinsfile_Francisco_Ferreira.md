@@ -15,7 +15,7 @@ node {
 	
 	stage('Test') {
 		echo 'Testing..'
-		java The_Weather_Channel/pom.xml
+		junit 'The_Weather_Channel/pom.xml'
 		}
 	
 	stage('Deploy') {
