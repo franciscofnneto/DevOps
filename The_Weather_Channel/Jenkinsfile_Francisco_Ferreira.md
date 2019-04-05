@@ -9,8 +9,8 @@ node {
 		echo "Running ${env.JOB_NAME} (${env.BUILD_ID}) at ${env.JENKINS_URL}"
 		deleteDir()
 		checkout scm
-		sh ‘echo “res" > result'
-		stash includes: ‘**/result', name: 'app'
+		//sh ‘echo “res" > result'
+		//stash includes: ‘**/result', name: 'app'
 		sh 'cat The_Weather_Channel/Jenkinsfile_Francisco_Ferreira.md'
 		sh 'printenv'
 		git url 'https://github.com/franciscofnneto/DevOps.git'
