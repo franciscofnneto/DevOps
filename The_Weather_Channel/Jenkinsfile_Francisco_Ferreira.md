@@ -39,6 +39,7 @@ node {
 				echo 'Branch Incorreta'
 			}
 		}
+		
 		echo 'Testing..'
 		steps{
 			env.GIT_COMMIT = sh(script: "git rev-parse HEAD", returnStdout: true).trim()
