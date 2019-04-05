@@ -1,28 +1,32 @@
+def username = 'Jenkins'
+env.CC = 'clang'
+
 node {
-    // Get Artifactory server instance, defined in the Artifactory Plugin administration page.
-    def server = Artifactory.server "SERVER_ID"
-    // Create an Artifactory Maven instance.
-    def rtMaven = Artifactory.newMavenBuild()
-    def buildInfo
+	stage('Build') {
+		env.DEBUG_FLAGS = '-g'
+		echo 'Building..'
+		echo "Hello Mr. ${username}"
+		echo "Running ${env.JOB_NAME} (${env.BUILD_ID}) at ${env.JENKINS_URL}"
+		deleteDir()
+		checkout scm
+		sh 'cat The_Weather_Channel/Jenkinsfile_Francisco_Ferreira.md'
+		sh 'printenv'
+		git url 'https://github.com/franciscofnneto/DevOps.git'
+		withEnv(["PATH+MAVEN=${tool 'M3'}/bin"]) {
+      		sh 'mvn -B verify'
+      		}
+		}
 
-    stage('Clone sources') {
-        git url: 'https://github.com/franciscofnneto/DevOps.git'
-    }
-
-    stage('Artifactory configuration') {
-        // Tool name from Jenkins configuration
-        rtMaven.tool = "Maven-3.3.9"
-        // Set Artifactory repositories for dependencies resolution and artifacts deployment.
-        rtMaven.deployer releaseRepo:'libs-release-local', snapshotRepo:'libs-snapshot-local', server: server
-        rtMaven.resolver releaseRepo:'libs-release', snapshotRepo:'libs-snapshot', server: server
-    }
-
+		
     stage('Maven build') {
-        buildInfo = rtMaven.run pom: 'The_Weather_Channel/pom.xml', goals: 'clean install'
+        rtMaven.run pom: 'The_Weather_Channel/pom.xml'
     }
-
-    stage('Publish build info') {
-        server.publishBuildInfo buildInfo
-    }
+	
+	stage('Test') {
+		echo 'Testing..'
+		}
+	
+	stage('Deploy') {
+		echo 'Deploying....'
+	}
 }
-
