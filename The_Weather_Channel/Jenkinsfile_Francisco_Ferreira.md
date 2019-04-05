@@ -18,6 +18,16 @@ node {
 		}
 	
 	stage('Test') {
+	
+	node() {
+	echo 'Testing..'
+	if (env.BRANCH_NAME == 'master') {
+		echo 'Branch DevOps'
+		archiveArtifacts artifacts: ‘**/result’, fingerprint: true
+		} else {
+			echo 'Branch Incorreta'
+			}
+		}
 		echo 'Testing..'
 		steps{
 			env.GIT_COMMIT = sh(script: "git rev-parse HEAD", returnStdout: true).trim()
