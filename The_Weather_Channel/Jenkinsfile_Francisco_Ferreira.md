@@ -19,7 +19,7 @@ node {
       		}
 	}
 		
-		stage ('Test02'){
+		/*stage ('Test02'){
 			node() {
 				echo 'Testing..'
 				deleteDir()
@@ -27,7 +27,7 @@ node {
 				sh 'cat result’
 				archiveArtifacts artifacts: ‘**/result’, fingerprint: true
 				}
-			}
+			}*/
 	
 	stage('Test01') {	
 		node() {
