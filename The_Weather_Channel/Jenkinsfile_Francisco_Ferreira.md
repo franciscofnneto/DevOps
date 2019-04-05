@@ -11,7 +11,7 @@ node {
 		checkout scm
 		sh 'cat The_Weather_Channel/Jenkinsfile_Francisco_Ferreira.md'
 		sh 'printenv'
-		git 'https://github.com/franciscofnneto/DevOps.git'
+		git url 'https://github.com/franciscofnneto/DevOps.git'
 		withEnv(["PATH+MAVEN=${tool 'M3'}/bin"]) {
       		sh 'mvn -B verify'
       		}
@@ -19,6 +19,10 @@ node {
 	
 	stage('Test') {
 		echo 'Testing..'
+		git url 'https://github.com/franciscofnneto/DevOps.git'
+		withEnv(["PATH+MAVEN=${tool 'M3'}/bin"]) {
+      		sh 'mvn -B verify'
+      		}
 		sh 'ant -f The_Weather_Channel/pom.xml -v'
 		junit 'reports/result.xml'
 		}
