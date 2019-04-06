@@ -10,7 +10,6 @@ node {
 		checkout scm
 		sh 'cat The_Weather_Channel/Jenkinsfile_Francisco_Ferreira.md'
 		sh 'printenv'
-		git url 'https://github.com/franciscofnneto/DevOps.git'
 	}
 
 	
