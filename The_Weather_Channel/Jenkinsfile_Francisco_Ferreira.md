@@ -9,24 +9,14 @@ node {
 		deleteDir()
 		checkout scm
 		sh 'cat The_Weather_Channel/Jenkinsfile_Francisco_Ferreira.md'
-		sh 'printenv'		
-		//Get Artifactory server instance, defined in the Artifactory Plugin administration page.
-		def server = Artifactory.server "SERVER_ID"
-		//Create an Artifactory Maven instance.
-		def rtMaven = Artifactory.newMavenBuild()
-		def buildInfo
+		sh 'printenv'
 	}
 
 	
 stage('Test') {
 echo 'Testing ..'
-        def server = Artifactory.server 'artifactory'
         def rtMaven = Artifactory.newMavenBuild()
-        rtMaven.resolver server: server, releaseRepo: 'libs-release', snapshotRepo: 'libs-snapshot'
-        rtMaven.deployer server: server, releaseRepo: 'libs-release-local', snapshotRepo: 'libs-release-local-SNAPSHOT'
         rtMaven.tool = 'Maven-3.6.0'
-        def buildInfo = rtMaven.run pom: 'pom.xml', goals: 'clean package -Dskip.unit.tests=true -Dskip.integration.tests=true'
-        server.publishBuildInfo buildInfo
     }
 	
 stage('Deploy') {
