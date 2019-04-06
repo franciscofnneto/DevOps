@@ -15,7 +15,7 @@ node {
 	
 stage('Test') {
 echo 'Testing ...'
-  tool: Maven-3.6.0,
+  tool: 'Maven-3.6.0',
     pom: 'The_Weather_Channel/pom.xml',
     goals: 'clean install'
     }
