@@ -14,9 +14,7 @@ node {
 
 	
 stage('Test') {
-echo 'Testing ..'
-        def rtMaven = Artifactory.newMavenBuild()
-        rtMaven.tool = 'Maven-3.6.0'
+echo 'Testing ...'
     }
 	
 stage('Deploy') {
