@@ -19,7 +19,6 @@ node {
 	
 stage('Test') {
 	rtMaven.tool = "maven"
-        buildInfo = rtMaven.run pom: 'The_Weather_Channel/pom.xml', goals: 'clean install'
 		}
 	
 stage('Deploy') {
