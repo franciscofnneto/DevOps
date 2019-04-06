@@ -15,7 +15,7 @@ node {
 stage('Artifactory configuration') {
         git url 'https://github.com/franciscofnneto/DevOps.git'
         rtMaven = Artifactory.newMavenBuild()
-        rtMaven.tool = Maven-3.6.0
+        rtMaven.tool = "Maven-3.6.0"
         rtMaven.deployer releaseRepo: 'libs-release-local', snapshotRepo: 'libs-snapshot-local', server: server
         rtMaven.resolver releaseRepo: 'libs-release', snapshotRepo: 'libs-snapshot', server: server
         rtMaven.deployer.deployArtifacts = false
