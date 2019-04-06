@@ -16,13 +16,9 @@ node {
       		}
 	}
 
-stage('Artifactory configuration') {
-        rtMaven.tool = "maven"
-        rtMaven.deployer releaseRepo:'libs-release-local', snapshotRepo:'libs-snapshot-local', server: server
-        rtMaven.resolver releaseRepo:'libs-release', snapshotRepo:'libs-snapshot', server: server
-    }
 
    stage('Maven build') {
+   	rtMaven.tool = "maven"
         buildInfo = rtMaven.run pom: 'The_Weather_Channel/pom.xml', goals: 'clean install'
     }
 	
