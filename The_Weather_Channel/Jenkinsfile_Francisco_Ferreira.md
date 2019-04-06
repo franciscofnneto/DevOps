@@ -1,25 +1,42 @@
 def username = 'Francisco'
 env.CC = 'clang'
 node {
-	stage('Build') {
-		env.DEBUG_FLAGS = '-g'
-		echo 'Building..'
-		echo "Olá Francisco ${username}"
-		echo "Running ${env.JOB_NAME} (${env.BUILD_ID}) at ${env.JENKINS_URL}"
-		deleteDir()
-		checkout scm
-		sh 'cat The_Weather_Channel/Jenkinsfile_Francisco_Ferreira.md'
-		sh 'printenv'
-	}
+    stage('Build') {
+        env.DEBUG_FLAGS = '-g'
+        echo 'Building..'
+        echo "Olá ${username}"
+        echo "Running ${env.JOB_NAME} (${env.BUILD_ID}) at ${env.JENKINS_URL}"
+        deleteDir()
+        checkout scm
+        sh 'cat The_Weather_Channel/Jenkinsfile_Francisco_Ferreira.md'
+        sh 'printenv'
+        }
 
-	
-def server = Artifactory.server "master"
-server.credentialsId = 'Artifactory'
-def rtMaven = Artifactory.newMavenBuild()
-rtMaven.tool = "Maven-3.6.0"
-def buildInfo
-	
+stage('Artifactory configuration') {
+        rtMaven.tool = "Maven-3.6.0"
+        rtMaven.deployer releaseRepo:'libs-release-local', snapshotRepo:'libs-snapshot-local', server: server
+        rtMaven.resolver releaseRepo:'libs-release', snapshotRepo:'libs-snapshot', server: server
+    }
+
+   stage('Maven build') {
+        buildInfo = rtMaven.run pom: 'The_Weather_Channel/pom.xml', goals: 'clean install'
+    }
+    
+stage('Test') {
+        echo 'Testing..'
+        steps{
+            env.GIT_COMMIT = sh(script: "git rev-parse HEAD", returnStdout: true).trim()
+            echo env.GIT_COMMIT
+            git url 'https://github.com/franciscofnneto/DevOps.git'
+            withEnv(["PATH+MAVEN=${tool 'M3'}/bin"]) {
+                sh 'mvn -B verify'
+                }
+            sh 'ant -f The_Weather_Channel/pom.xml -v'
+            junit 'reports/result.xml'
+            }
+        }
+    
 stage('Deploy') {
-		echo 'Deploying....'
-	}
+        echo 'Deploying....'
+    }
 }
