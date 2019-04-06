@@ -11,9 +11,11 @@ node {
         sh 'cat The_Weather_Channel/Jenkinsfile_Francisco_Ferreira.md'
         sh 'printenv'
         }
+   stage ('Clone') {
+        git url 'https://github.com/franciscofnneto/DevOps.git'
+    }
 
 stage('Artifactory configuration') {
-        git url 'https://github.com/franciscofnneto/DevOps.git'
         rtMaven = Artifactory.newMavenBuild()
         rtMaven.tool = "Maven-3.6.0"
         rtMaven.deployer releaseRepo: 'libs-release-local', snapshotRepo: 'libs-snapshot-local', server: server
