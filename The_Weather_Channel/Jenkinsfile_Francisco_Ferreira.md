@@ -15,6 +15,9 @@ node {
 	
 stage('Test') {
 	echo 'Testing ...'
+	rtMaven.tool = "maven"
+        rtMaven.deployer releaseRepo:'libs-release-local', snapshotRepo:'libs-snapshot-local', server: server
+        rtMaven.resolver releaseRepo:'libs-release', snapshotRepo:'libs-snapshot', server: server
 		}
 	
 stage('Deploy') {
