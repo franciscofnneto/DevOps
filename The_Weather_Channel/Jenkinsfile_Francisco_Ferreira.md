@@ -1,10 +1,10 @@
-def username = 'Jenkins'
+def username = 'Francisco'
 env.CC = 'clang'
 node {
 	stage('Build') {
 		env.DEBUG_FLAGS = '-g'
 		echo 'Building..'
-		echo "Hello Mr. ${username}"
+		echo "Olá Francisco ${username}"
 		echo "Running ${env.JOB_NAME} (${env.BUILD_ID}) at ${env.JENKINS_URL}"
 		deleteDir()
 		checkout scm
@@ -16,7 +16,7 @@ node {
 
 	
 stage('Test') {
-	rtMaven.tool = "maven"
+	echo 'Testing ...'
 		}
 	
 stage('Deploy') {
