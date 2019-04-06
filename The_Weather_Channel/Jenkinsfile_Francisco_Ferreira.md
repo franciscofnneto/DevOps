@@ -1,6 +1,5 @@
 def username = 'Jenkins'
 env.CC = 'clang'
-
 node {
 	stage('Build') {
 		env.DEBUG_FLAGS = '-g'
@@ -15,21 +14,19 @@ node {
 		withEnv(["PATH+MAVEN=${tool 'M3'}/bin"]) {
       		sh 'mvn -B verify'
       		}
-		}
+	}
 
-	stage('Artifactory configuration') {
-        Tool name from Jenkins configuration
+stage('Artifactory configuration') {
         rtMaven.tool = "maven"
-        //Set Artifactory repositories for dependencies resolution and artifacts deployment.
         rtMaven.deployer releaseRepo:'libs-release-local', snapshotRepo:'libs-snapshot-local', server: server
         rtMaven.resolver releaseRepo:'libs-release', snapshotRepo:'libs-snapshot', server: server
     }
 
-    stage('Maven build') {
+   stage('Maven build') {
         buildInfo = rtMaven.run pom: 'The_Weather_Channel/pom.xml', goals: 'clean install'
     }
 	
-	stage('Test') {
+stage('Test') {
 		echo 'Testing..'
 		steps{
 			env.GIT_COMMIT = sh(script: "git rev-parse HEAD", returnStdout: true).trim()
@@ -43,7 +40,7 @@ node {
 			}
 		}
 	
-	stage('Deploy') {
+stage('Deploy') {
 		echo 'Deploying....'
 	}
 }
