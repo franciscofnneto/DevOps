@@ -16,24 +16,10 @@ node {
       		}
 	}
 
-
-   stage('Maven build') {
-   	rtMaven.tool = "maven"
-        buildInfo = rtMaven.run pom: 'The_Weather_Channel/pom.xml', goals: 'clean install'
-    }
 	
 stage('Test') {
-		echo 'Testing..'
-		steps{
-			env.GIT_COMMIT = sh(script: "git rev-parse HEAD", returnStdout: true).trim()
-			echo env.GIT_COMMIT
-			git url 'https://github.com/franciscofnneto/DevOps.git'
-			withEnv(["PATH+MAVEN=${tool 'M3'}/bin"]) {
-      			sh 'mvn -B verify'
-      			}
-			sh 'ant -f The_Weather_Channel/pom.xml -v'
-			junit 'reports/result.xml'
-			}
+	rtMaven.tool = "maven"
+        buildInfo = rtMaven.run pom: 'The_Weather_Channel/pom.xml', goals: 'clean install'
 		}
 	
 stage('Deploy') {
