@@ -14,11 +14,15 @@ node {
 
 	
 stage('Test') {
-	echo 'Testing ...'
-	rtMaven.tool = "maven"
-        rtMaven.deployer releaseRepo:'libs-release-local', snapshotRepo:'libs-snapshot-local', server: server
-        rtMaven.resolver releaseRepo:'libs-release', snapshotRepo:'libs-snapshot', server: server
-		}
+echo 'Testing ..'
+        def server = Artifactory.server 'artifactory'
+        def rtMaven = Artifactory.newMavenBuild()
+        rtMaven.resolver server: server, releaseRepo: 'libs-release', snapshotRepo: 'libs-snapshot'
+        rtMaven.deployer server: server, releaseRepo: 'libs-release-local', snapshotRepo: 'libs-release-local-SNAPSHOT'
+        rtMaven.tool = 'Maven-3.6.0'
+        def buildInfo = rtMaven.run pom: 'pom.xml', goals: 'clean package -Dskip.unit.tests=true -Dskip.integration.tests=true'
+        server.publishBuildInfo buildInfo
+    }
 	
 stage('Deploy') {
 		echo 'Deploying....'
