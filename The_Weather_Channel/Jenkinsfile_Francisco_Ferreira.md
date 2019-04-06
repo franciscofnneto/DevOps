@@ -9,7 +9,12 @@ node {
 		deleteDir()
 		checkout scm
 		sh 'cat The_Weather_Channel/Jenkinsfile_Francisco_Ferreira.md'
-		sh 'printenv'
+		sh 'printenv'		
+		//Get Artifactory server instance, defined in the Artifactory Plugin administration page.
+		def server = Artifactory.server "SERVER_ID"
+		//Create an Artifactory Maven instance.
+		def rtMaven = Artifactory.newMavenBuild()
+		def buildInfo
 	}
 
 	
