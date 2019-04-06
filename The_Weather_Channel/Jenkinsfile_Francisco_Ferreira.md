@@ -13,32 +13,25 @@ node {
         }
 
 stage('Artifactory configuration') {
-        def rtMaven = Artifactory.newMavenBuild()
-        rtMaven.tool = "Maven-3.6.0"
-        rtMaven.deployer releaseRepo:'libs-release-local', snapshotRepo:'libs-snapshot-local', server: server
-        rtMaven.resolver releaseRepo:'libs-release', snapshotRepo:'libs-snapshot', server: server
+        git url 'https://github.com/franciscofnneto/DevOps.git'
+        rtMaven = Artifactory.newMavenBuild()
+        rtMaven.tool = Maven-3.6.0
+        rtMaven.deployer releaseRepo: 'libs-release-local', snapshotRepo: 'libs-snapshot-local', server: server
+        rtMaven.resolver releaseRepo: 'libs-release', snapshotRepo: 'libs-snapshot', server: server
+        rtMaven.deployer.deployArtifacts = false
+        buildInfo = Artifactory.newBuildInfo()
     }
-
+    stage ('Test') {
+        rtMaven.run pom: 'The_Weather_Channel/pom.xml', goals: 'clean test'
+    }
+    stage ('Install') {
+        rtMaven.run pom: 'The_Weather_Channel/pom.xml', goals: 'install', buildInfo: buildInfo
+    }
+    stage ('Deploy') {
+        rtMaven.deployer.deployArtifacts buildInfo
+    }
    stage('Maven build') {
         def buildInfo
         buildInfo = rtMaven.run pom: 'The_Weather_Channel/pom.xml', goals: 'clean install'
-    }
-    
-stage('Test') {
-        echo 'Testing..'
-        steps{
-            env.GIT_COMMIT = sh(script: "git rev-parse HEAD", returnStdout: true).trim()
-            echo env.GIT_COMMIT
-            git url 'https://github.com/franciscofnneto/DevOps.git'
-            withEnv(["PATH+MAVEN=${tool 'M3'}/bin"]) {
-                sh 'mvn -B verify'
-                }
-            sh 'ant -f The_Weather_Channel/pom.xml -v'
-            junit 'reports/result.xml'
-            }
-        }
-    
-stage('Deploy') {
-        echo 'Deploying....'
     }
 }
