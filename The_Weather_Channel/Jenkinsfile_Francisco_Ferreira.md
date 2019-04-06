@@ -13,20 +13,11 @@ node {
 	}
 
 	
-def server = Artifactory.server "Master"
+def server = Artifactory.server "master"
 server.credentialsId = 'Artifactory'
 def rtMaven = Artifactory.newMavenBuild()
 rtMaven.tool = "Maven-3.6.0"
 def buildInfo
-
-stage('Maven Build') {
-    steps {
-        script {
-            buildInfo = rtMaven.run pom: 'appname/pom.xml', goals: '-U clean install -P dev -Dmaster.name=${Cluster} -Dcore.version=${CORE_VERSION}'
-            buildInfo.retention maxBuilds: 10, maxDays: 5, deleteBuildArtifacts: true
-        }
-    }
-}
 	
 stage('Deploy') {
 		echo 'Deploying....'
